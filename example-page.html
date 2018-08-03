@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Ebook App Template :: Pixeden</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/libs/prism/prism.css">
+    <link rel="stylesheet" href="assets/css/pe-slider.css">
+    <link rel="stylesheet" href="assets/fonts/pe-media-icons/css/pe-media-icons.css">
+    <link rel="stylesheet" href="assets/fonts/pe-media-icons/css/helper.css">
+    <link rel="stylesheet" href="assets/fonts/pe-icon-social/css/pe-icon-social.css">
+    <link rel="stylesheet" href="assets/fonts/pe-icon-social/css/social-style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <style>
+      [href="#top"] {
+        position: relative;
+        z-index: 1000;
+      }
+      
+      
+      
+    </style>
+    <div id="loading">
+      <svg viewBox="0 0 473 668" class="loader">
+        <use xlink:href="assets/img/symbols.svg#ipad-outline"></use>
+      </svg>
+    </div>
+    <svg width="200" height="200" viewBox="10 10 280 280" style="display:none;">
+      <filter id="multiply">
+        <feBlend mode="multiply"></feBlend>
+      </filter>
+    </svg>
+    <nav class="navbar ebook-nav navbar--open nav-sinbad">
+      <ul class="nav nav-pills">
+        <li role="presentation"><a href="#services" class="text-medium"> <span>SERVICES</span><i class="pe-mi-star"></i></a></li>
+        <li role="presentation"><a href="#team" class="text-medium"> <span>TEAM</span><i class="pe-mi-user-2"></i></a></li>
+        <li role="presentation"><a href="#quotes" class="text-medium"> <span>QUOTES</span><i class="pe-mi-bubble-chat-1"></i></a></li>
+        <li role="presentation"><a href="#news" class="text-medium"> <span>NEWS</span><i class="pe-mi-speaker-1"></i></a></li>
+      </ul>
+    </nav>
+    <button type="button" role="button" class="nav-btn x color-sinbad"><span class="lines"></span></button>
+    <section data-bg-src="assets/img/img_1.jpg" data-bg-blend="normal" data-bg-color="#28292d" id="top" class="section section-background pe-fixed x2 section-dark pb-130 pt-130">
+      <svg class="svg-misc hero-misc-1">
+        <use xlink:href="assets/img/symbols.svg#misc-2"></use>
+      </svg>
+      <svg class="svg-misc hero-misc-2">
+        <use xlink:href="assets/img/symbols.svg#misc-3"></use>
+      </svg>
+      <div class="container">
+        <div class="row hero-unit">
+          <div class="col-md-12 hero-copy text-center">
+            <p>This is just the</p>
+            <h1 class="mt0 text-uppercase text-black"> <span class="color-sinbad">Ebook</span><br>Example<br><span class="color-sinbad">Page</span></h1>
+            <p class="hero-text fz-21">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend quis ipsum in cursus. In semper sem nec neque pulvinar, vitae congue enim convallis.</p>
+            <button class="btn btn-white hero-btn">See more</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="services" class="section section-sinbad">
+      <div class="container color-dark">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1 class="text-bold text-uppercase">Our services</h1>
+          </div>
+        </div>
+        <div class="row mt3">
+          <div class="col-md-4 col-sm-4">
+            <div class="media ebook-features mb-80">
+              <div class="media-left"><i class="pe-mi-bubble-chat-1"></i></div>
+              <div class="media-body">
+                <h3 class="feature-title text-bold text-uppercase">Ideas</h3>
+                <p class="fz-14"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quasi excepturi dicta aut amet, ipsam suscipit?</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <div class="media ebook-features mb-80">
+              <div class="media-left"><i class="pe-mi-pen-2"></i></div>
+              <div class="media-body">
+                <h3 class="feature-title text-bold text-uppercase">Design</h3>
+                <p class="fz-14"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro repellendus quia hic, ipsum, iusto!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <div class="media ebook-features mb-80">
+              <div class="media-left"><i class="pe-mi-contacts-1"></i></div>
+              <div class="media-body">
+                <h3 class="feature-title text-bold text-uppercase">Test</h3>
+                <p class="fz-14"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ratione! In praesentium, omnis.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <button class="btn">portfolio</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="team" class="section section-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1 class="text-bold text-uppercase">Our team</h1>
+          </div>
+        </div>
+        <div class="row mt3">
+          <div class="col-md-4">
+            <div class="ebook-mask mb-35"><img src="assets/img/team_1.jpg">
+              <svg>
+                <use xlink:href="assets/img/symbols.svg#misc-4"></use>
+              </svg>
+              <h3 class="text-bold text-uppercase">Derek Brill</h3>
+              <h4 class="text-uppercase">Designer</h4>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="ebook-mask mb-35">           <img src="assets/img/team_2.jpg">
+              <svg>
+                <use xlink:href="assets/img/symbols.svg#misc-2"></use>
+              </svg>
+              <h3 class="text-bold text-uppercase">Tammy Gooch</h3>
+              <h4 class="text-uppercase">Team Leader</h4>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="ebook-mask mb-35">           <img src="assets/img/team_3.jpg">
+              <svg>
+                <use xlink:href="assets/img/symbols.svg#misc-3"></use>
+              </svg>
+              <h3 class="text-bold text-uppercase">Martha Hammond</h3>
+              <h4 class="text-uppercase">Designer</h4>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="quotes" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1 class="text-bold text-uppercase">People say</h1>
+          </div>
+        </div>
+        <div class="row mt3">
+          <div class="col-md-8 col-md-offset-2">
+            <div id="quotes-slider" class="pe-slider">
+              <ul class="pe-slides">
+                <li id="s1" class="slide-1">
+                  <blockquote class="ebook-quote">
+                    <p>  Lorem ipsum dolor sit amet, consectetur.</p>
+                    <footer>John doe</footer>
+                  </blockquote>
+                </li>
+                <li id="s2" class="slide-2">
+                  <blockquote class="ebook-quote">
+                    <p>  Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                    <footer>Layers Magazine</footer>
+                  </blockquote>
+                </li>
+              </ul>
+              <ul data-current="Review 01" class="pe-slider-nav">
+                <li><a href="#0" class="pe-slider-prev"></a></li>
+                <li><a href="#0" class="pe-slider-next"></a></li>
+              </ul>
+            </div>
+            <ul class="quotes-navigation">
+              <li><a id="q-prev" href="#0" class="pe-slider-prev"></a></li>
+              <li><a id="q-next" href="#0" class="pe-slider-next"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section data-bg-src="assets/img/img_1.jpg" data-bg-blend="normal" data-bg-color="#28292d" id="news" class="section section-background pe-fixed x2 section-dark pb-30 pt-130">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1 class="text-bold text-uppercase">newsletter</h1>
+          </div>
+        </div>
+        <div class="row mt3">
+          <div class="col-md-8 col-md-offset-2">
+            <form>
+              <div class="input-group">
+                <input id="inputNameGroup" type="text" class="form-control">
+                <label for="inputNameGroup" class="text-truncate">Email</label><span class="input-group-btn">
+                  <button class="btn">get it!</button></span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="footer" class="section section-light">
+      <svg class="svg-misc footer-misc">
+        <use xlink:href="assets/img/symbols.svg#misc-4"></use>
+      </svg>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p class="mt-10">© 2014 Pixeden. All Rights Reserved.</p>
+          </div>
+        </div>
+        <div class="row mt3">
+          <div class="col-md-12 text-right"><a href="#top" class="fz-30"><i class="pe-mi-up-arrow"></i></a></div>
+        </div>
+      </div>
+    </section>
+    <script>
+      var peLoader=function(){var e=function(e){config={loader:"#loading",removeTime:700};for(var o in e)e.hasOwnProperty(o)&&(config[o]=e[o]);var n,i=document.querySelector(config.loader),t=function(e){e.classList.add("loaded"),setTimeout(function(){document.body.removeChild(e)},config.removeTime)},r=function(){n=setTimeout(t(i),2e3)};i&&(window.addEventListener("load",r),i.addEventListener("click",function(){clearTimeout(n),t(i)}))};return{init:e}}();
+      peLoader.init({
+          loader: '#loading',
+          removeTime: 700
+      });
+      
+    </script>
+    <!-- Libs scripts-->
+    <script type="text/javascript" src="assets/libs/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="assets/libs/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/libs/prism/prism.js"></script>
+    <script type="text/javascript" src="assets/js/fontsmoothie.min.js"></script>
+    <!-- Pe Plugins-->
+    <script type="text/javascript" src="assets/js/pe-slider.2.js"></script>
+    <script type="text/javascript" src="assets/js/pe-scrollchange.min.js"></script>
+    <script type="text/javascript" src="assets/js/pe-navscroll.js"></script>
+    <script type="text/javascript" src="assets/js/pe-bg.js"></script>
+    <script type="text/javascript" src="assets/js/pe-svgttern.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script>
+      $(document).ready(function(){
+      
+        // Pe Background
+        var bgs = new peBg();
+        bgs.init();
+        
+          peNavScroll.init({
+            nav:'.navbar',
+            class:'active',
+            duration: 500,
+            noMenu: true,
+            allLinks: true,
+            hideOnScroll: true,
+            hideFn: function(){
+              document.querySelector('.navbar').classList.remove('navbar--open');
+              document.querySelector('.nav-btn').classList.remove('x');
+            },
+            showFn: function(){
+              document.querySelector('.navbar').classList.add('navbar--open');
+              document.querySelector('.nav-btn').classList.add('x');
+            },
+            easingFunction: easing.easeInOutCubic
+          });
+          
+          // Pe Slider
+          var quoteSlider = new peSlider();
+          quoteSlider.init({
+            slider:'#quotes-slider',
+            pagination: false,
+            navigation: false
+          });
+      
+          var qPrev = document.getElementById('q-prev');
+          var qNext = document.getElementById('q-next');
+          qNext.addEventListener('click', function(){
+            quoteSlider.nextSlide();
+          });
+          qPrev.addEventListener('click', function(){
+            quoteSlider.prevSlide();
+          });
+      
+          
+      
+          [].slice.call( document.querySelectorAll( '.form-group input' ) ).forEach( function( inputEl ) {
+            if( inputEl.value.trim() !== '' ) {
+              inputEl.parentNode.classList.add('block');
+            }
+      
+            inputEl.addEventListener( 'focus', onInputFocus );
+            inputEl.addEventListener( 'blur', onInputBlur );
+          });
+      
+              function onInputFocus( ev ) {
+                ev.target.parentNode.classList.add('block');
+              }
+      
+              function onInputBlur( ev ) {
+                if( ev.target.value.trim() === '' ) {
+                  ev.target.parentNode.classList.remove('block');
+                }
+              }
+      
+          // Mobile Navigation
+          $('.nav-btn').click(function(){
+            $(this).toggleClass('x');
+            $('.navbar').toggleClass('navbar--open');
+          })
+      
+        }) // Ready
+    </script>
+  </body>
+</html>

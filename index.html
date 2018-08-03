@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Ebook App Template :: Pixeden</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/libs/prism/prism.css">
+    <link rel="stylesheet" href="assets/css/pe-slider.css">
+    <link rel="stylesheet" href="assets/fonts/pe-media-icons/css/pe-media-icons.css">
+    <link rel="stylesheet" href="assets/fonts/pe-media-icons/css/helper.css">
+    <link rel="stylesheet" href="assets/fonts/pe-icon-social/css/pe-icon-social.css">
+    <link rel="stylesheet" href="assets/fonts/pe-icon-social/css/social-style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <div id="loading">
+      <svg viewBox="0 0 473 668" class="loader">
+        <use xlink:href="assets/img/symbols.svg#ipad-outline"></use>
+      </svg>
+    </div>
+    <style>
+      body {
+        background-color: #000;
+        color: white;
+      }
+      .hello-nav {
+        width: 50%;
+        margin: 100px auto;
+      }
+      @media only screen and (max-width : 768px) {
+        .hello-nav { width: 100%; }
+        .svg-ipad-hero { width: 100%; }
+      }
+    </style>
+    <div class="hello-nav">
+      <svg viewBox="0 0 473 668" class="svg-ipad-hero text-center">
+        <use xlink:href="assets/img/symbols.svg#ipad-outline"></use>
+        <foreignObject x="24" y="64" width="423" height="526">
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <div class="svg-foreign-ipad section-dark">
+              <svg viewBox="0 0 16.4 14.1" class="svg-main-icon fz-10">
+                <use xlink:href="assets/img/symbols.svg#s-crown"></use>
+              </svg>
+              <p class="text-thin text-uppercase mt1">Ebook App Template</p><br>
+              <div class="text-center mt2 px4"><a href="home.html" class="btn btn-sm btn-block btn-regent-blue">Home</a><a href="sections.html" class="btn btn-sm btn-block btn-sinbad">Sections</a><a href="documentation.html" class="btn btn-sm btn-block btn-sinbad text-truncate">Documentation</a><a href="plugins.html" class="btn btn-sm btn-block btn-sinbad text-truncate">Plugins</a><a href="example-page.html" class="btn btn-sm btn-block btn-light text-truncate">Example Page</a></div>
+            </div>
+          </body>
+        </foreignObject>
+      </svg>
+    </div>
+    <script>
+      var peLoader=function(){var e=function(e){config={loader:"#loading",removeTime:700};for(var o in e)e.hasOwnProperty(o)&&(config[o]=e[o]);var n,i=document.querySelector(config.loader),t=function(e){e.classList.add("loaded"),setTimeout(function(){document.body.removeChild(e)},config.removeTime)},r=function(){n=setTimeout(t(i),2e3)};i&&(window.addEventListener("load",r),i.addEventListener("click",function(){clearTimeout(n),t(i)}))};return{init:e}}();
+      peLoader.init({
+          loader: '#loading',
+          removeTime: 700
+      });
+      
+    </script>
+    <!-- Libs scripts-->
+    <script type="text/javascript" src="assets/libs/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="assets/libs/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/libs/prism/prism.js"></script>
+    <script type="text/javascript" src="assets/js/fontsmoothie.min.js"></script>
+    <!-- Pe Plugins-->
+    <script type="text/javascript" src="assets/js/pe-slider.2.js"></script>
+    <script type="text/javascript" src="assets/js/pe-scrollchange.min.js"></script>
+    <script type="text/javascript" src="assets/js/pe-navscroll.js"></script>
+    <script type="text/javascript" src="assets/js/pe-bg.js"></script>
+    <script type="text/javascript" src="assets/js/pe-svgttern.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script></script>
+  </body>
+</html>

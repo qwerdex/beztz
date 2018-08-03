@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Ebook App Template :: Pixeden</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/libs/prism/prism.css">
+    <link rel="stylesheet" href="assets/css/pe-slider.css">
+    <link rel="stylesheet" href="assets/fonts/pe-media-icons/css/pe-media-icons.css">
+    <link rel="stylesheet" href="assets/fonts/pe-media-icons/css/helper.css">
+    <link rel="stylesheet" href="assets/fonts/pe-icon-social/css/pe-icon-social.css">
+    <link rel="stylesheet" href="assets/fonts/pe-icon-social/css/social-style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <div id="loading">
+      <svg viewBox="0 0 473 668" class="loader">
+        <use xlink:href="assets/img/symbols.svg#ipad-outline"></use>
+      </svg>
+    </div>
+    <svg width="200" height="200" viewBox="10 10 280 280" style="display:none;">
+      <filter id="multiply">
+        <feBlend mode="multiply"></feBlend>
+      </filter>
+    </svg>
+    <nav class="navbar nav-light-grey">
+      <ul class="nav nav-pills">
+        <li role="presentation"><a href="#type" class="text-medium"> <span>TYPE</span><i class="pe-mi-pen-tool"></i></a></li>
+        <li role="presentation"><a href="#buttons" class="text-medium"> <span>BUTTONS</span><i class="pe-mi-switch"></i></a></li>
+        <li role="presentation"><a href="#forms" class="text-medium"> <span>FORMS</span><i class="pe-mi-notepad-2"></i></a></li>
+        <li role="presentation"><a href="#extras" class="text-medium"> <span>EXTRAS</span><i class="pe-mi-add"></i></a></li>
+        <li role="presentation"><a href="#helpers" class="text-medium"> <span>HELPERS</span><i class="pe-mi-help-2"></i></a></li>
+        <li role="presentation"><a href="#icons" class="text-medium"> <span>ICONS</span><i class="pe-mi-photo-1"></i></a></li>
+      </ul>
+    </nav>
+    <button type="button" role="button" class="nav-btn"><span class="lines"></span></button>
+    <section id="top" class="section">
+      <div class="container">
+        <div class="row hero-unit text-center">
+          <div class="col-md-12">
+            <h1 class="text-uppercase text-black text-truncate">Documentation</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="type" class="section section-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1 class="text-uppercase text-light mb4 text-truncate">Typography</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <h1>h1 Heading</h1>
+            <h2>h2 Heading</h2>
+            <h3>h3 Heading</h3>
+            <h4>h4 Heading</h4>
+            <h5>h5 Heading</h5>
+          </div>
+          <div class="col-md-7 mt3">
+            <pre class="language-markup"><code>&lt;h1&gt;h1 Heading&lt;/h1&gt; <code>&#13;&#13;</code>&lt;h2&gt;h2 Heading&lt;/h2&gt; <code>&#13;&#13;</code>&lt;h3&gt;h3 Heading&lt;/h3&gt; <code>&#13;&#13;</code>&lt;h4&gt;h4 Heading&lt;/h4&gt; <code>&#13;&#13;</code>&lt;h5&gt;h5 Heading&lt;/h5&gt; </code></pre>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <h1 class="h-underlined">h1 Underlined</h1><br>
+            <h2 class="h-underlined">h2 Underlined</h2><br>
+            <h3 class="h-underlined">h3 Underlined</h3><br>
+            <h4 class="h-underlined">h4 Underlined</h4><br>
+            <h5 class="h-underlined">h5 Underlined</h5>
+          </div>
+          <div class="col-md-7 mt3">
+            <pre class="language-markup"><code>&lt;h1 clas=&quot;h-underlined&quot;&gt;h1 Underlined&lt;/h1&gt;<code>&#13;&#13;</code>&lt;h2 clas=&quot;h-underlined&quot;&gt;h2 Underlined&lt;/h2&gt;<code>&#13;&#13;</code>&lt;h3 clas=&quot;h-underlined&quot;&gt;h3 Underlined&lt;/h3&gt;<code>&#13;&#13;</code>&lt;h4 clas=&quot;h-underlined&quot;&gt;h4 Underlined&lt;/h4&gt;<code>&#13;&#13;</code>&lt;h5 clas=&quot;h-underlined&quot;&gt;h5 Underlined&lt;/h5&gt;</code></pre>
+          </div>
+        </div>
+        <div class="row mt4">
+          <div class="col-md-5">
+            <p class="text-thin">Text thin ipsum dolor sit amet.</p>
+            <p class="text-light">Text light ipsum dolor sit amet.</p>
+            <p class="text-book">Text book ipsum dolor sit amet.</p>
+            <p class="text-medium">Text medium ipsum dolor sit amet.</p>
+            <p class="text-bold">Text bold ipsum dolor sit amet.</p>
+            <p class="text-black">Text black ipsum dolor sit amet.</p>
+            <p class="text-ultra">Text ultra ipsum dolor sit amet.</p>
+          </div>
+          <div class="col-md-7 mt2">
+            <pre class="language-markup"><code>&lt;p class=&quot;text-thin&quot;&gt; Text thin ipsum dolor sit amet.&lt;/p&gt; &#13;&lt;p class=&quot;text-light&quot;&gt; Text light ipsum dolor sit amet.&lt;/p&gt; &#13;&lt;p class=&quot;text-book&quot;&gt; Text book ipsum dolor sit amet.&lt;/p&gt; &#13;&lt;p class=&quot;text-medium&quot;&gt; Text medium ipsum dolor sit amet.&lt;/p&gt; &#13;&lt;p class=&quot;text-bold&quot;&gt; Text bold ipsum dolor sit amet.&lt;/p&gt; &#13;&lt;p class=&quot;text-black&quot;&gt; Text black ipsum dolor sit amet.&lt;/p&gt; &#13;&lt;p class=&quot;text-ultra&quot;&gt; Text ultra ipsum dolor sit amet.&lt;/p&gt; &#13;</code></pre>
+          </div>
+        </div>
+        <div class="row mt4">
+          <div class="col-md-6 text-light fz-14">
+            <h3 class="text-uppercase text-black">Helpers</h3>
+            <p><span class="text-medium">Text truncate </span>adding the class <code>text-truncate</code></p>
+            <p class="text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam itaque ad velit inventore, eius debitis, dicta exercitationem nobis, harum culpa vel doloremque. Corporis voluptate quo, voluptates expedita voluptas.<span class="text-medium">TEXT UPPERCASE </span>adding the class <code>text-uppercase</code></p>
+            <p><span class="text-medium">Text normalcase </span>adding the class <code>text-normalcase</code></p>
+            <div id="text-colors">
+              <p><span class="text-bold color-regent-blue">Color regent-blue </span>adding the class <code>color-regent-blue</code></p>
+              <p><span class="text-bold color-light-grey">Color light-grey </span>adding the class <code>color-light-grey</code></p>
+              <p><span class="text-bold color-light">Color light </span>adding the class <code>color-light</code></p>
+              <p><span class="text-bold color-ebony-clay">Color ebony-clay </span>adding the class <code>color-ebony-clay</code></p>
+              <p><span class="text-bold color-sinbad">Color sinbad </span>adding the class <code>color-sinbad</code></p>
+              <p><span class="text-bold color-mandy">Color mandy </span>adding the class <code>color-mandy</code></p>
+              <p><span class="text-bold color-tacao">Color tacao </span>adding the class <code>color-tacao</code></p>
+              <p><span class="text-bold color-comet">Color comet </span>adding the class <code>color-comet</code></p>
+            </div><a href="#0">I'm a simple link</a>
+          </div>
+          <div class="col-md-6 mt4">
+            <pre class="language-markup"><code>&lt;p class=&quot;text-truncate&quot;&gt;Text truncate...&lt;/p&gt; &#13;
+&lt;p class=&quot;text-uppercase&quot;&gt;Text uppecase...&lt;/p&gt; &#13;
+&lt;p class=&quot;text-normalcase&quot;&gt;Text normalcase...&lt;/p&gt; &#13;&#13;</code><code>&lt;p class=&quot;color-regent-blue&quot;&gt;Color regent-blue&lt;/p&gt; &#13;</code><code>&lt;p class=&quot;color-light-grey&quot;&gt;Color light-grey&lt;/p&gt; &#13;</code><code>&lt;p class=&quot;color-light&quot;&gt;Color light&lt;/p&gt; &#13;</code><code>&lt;p class=&quot;color-ebony-clay&quot;&gt;Color ebony-clay&lt;/p&gt; &#13;</code><code>&lt;p class=&quot;color-sinbad&quot;&gt;Color sinbad&lt;/p&gt; &#13;</code><code>&lt;p class=&quot;color-mandy&quot;&gt;Color mandy&lt;/p&gt; &#13;</code><code>&lt;p class=&quot;color-tacao&quot;&gt;Color tacao&lt;/p&gt; &#13;</code><code>&lt;p class=&quot;color-comet&quot;&gt;Color comet&lt;/p&gt; &#13;</code><code>&#13;&#13;&lt;a href=&quot;#&quot;&gt;I'm a simple link.&lt;/a&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="buttons" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1 class="text-uppercase text-light mb4 text-truncate">Buttons </h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <button class="btn btn-xs">btn-xs</button>
+            <button class="btn btn-sm">btn-sm</button>
+            <button class="btn">btn</button>
+            <button class="btn btn-lg">btn-lg</button>
+            <button class="btn btn-sm mt1 btn-block">btn-block</button>
+            <hr>
+            <button class="btn btn-xs mt1 btn-primary">btn-primary </button>
+            <button class="btn btn-xs mt1 btn-success">btn-success </button>
+            <button class="btn btn-xs mt1 btn-info">btn-info </button>
+            <button class="btn btn-xs mt1 btn-warning">btn-warning </button>
+            <button class="btn btn-xs mt1 btn-danger">btn-danger </button>
+            <hr>
+            <button class="btn btn-xs mt1 btn-dark">btn-dark </button>
+            <button class="btn btn-xs mt1 btn-regent-blue">btn-regent-blue </button>
+            <button class="btn btn-xs mt1 btn-light-grey">btn-light-grey </button>
+            <button class="btn btn-xs mt1 btn-light">btn-light </button>
+            <button class="btn btn-xs mt1 btn-ebony-clay">btn-ebony-clay </button>
+            <button class="btn btn-xs mt1 btn-sinbad">btn-sinbad </button>
+            <button class="btn btn-xs mt1 btn-mandy">btn-mandy </button>
+            <button class="btn btn-xs mt1 btn-tacao">btn-tacao </button>
+            <button class="btn btn-xs mt1 btn-comet">btn-comet </button>
+          </div>
+          <div class="col-md-7">
+            <pre class="language-markup"><code>&lt;button class=&quot;btn btn-xs&quot;&gt;btn-xs&lt;/button&gt;
+&lt;button class=&quot;btn btn-sm&quot;&gt;btn-sm&lt;/button&gt;
+&lt;button class=&quot;btn&quot;&gt;btn&lt;/button&gt;
+&lt;button class=&quot;btn btn-lg&quot;&gt;btn-lg&lt;/button&gt;
+&lt;button class=&quot;btn btn-block&quot;&gt;Button block&lt;/button&gt;&#13;&#13;
+&lt;hr&gt;&#13;&#13;<code>&lt;button class=&quot;btn btn-primary&quot;&gt;btn-primary&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn btn-success&quot;&gt;btn-success&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn btn-info&quot;&gt;btn-info&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn btn-warning&quot;&gt;btn-warning&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn btn-danger&quot;&gt;btn-danger&lt;/button&gt;&#13;</code><code>&#13;&lt;hr&gt;&#13;&#13;</code><code>&lt;button class=&quot;btn btn-dark&quot;&gt;btn-dark&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn btn-regent-blue&quot;&gt;btn-regent-blue&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn btn-light-grey&quot;&gt;btn-light-grey&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn btn-light&quot;&gt;btn-light&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn btn-ebony-clay&quot;&gt;btn-ebony-clay&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn btn-sinbad&quot;&gt;btn-sinbad&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn btn-mandy&quot;&gt;btn-mandy&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn btn-tacao&quot;&gt;btn-tacao&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn btn-comet&quot;&gt;btn-comet&lt;/button&gt;&#13;</code></code></pre>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3 class="text-uppercase text-light mt4 mb4 text-truncate">Buttons<small class="text-normalcase"> inverse</small></h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <button class="btn btn-xs inverse mt1 btn-primary">Inverse Primary</button>
+            <button class="btn btn-xs inverse mt1 btn-success">Inverse Success</button>
+            <button class="btn btn-xs inverse mt1 btn-info">Inverse Info</button>
+            <button class="btn btn-xs inverse mt1 btn-warning">Inverse Warning</button>
+            <button class="btn btn-xs inverse mt1 btn-danger">Inverse Danger</button>
+            <button class="btn btn-xs inverse mt1 btn-regent-blue">inverse regent-blue </button>
+            <button class="btn btn-xs inverse mt1 btn-light-grey">inverse light-grey </button>
+            <button class="btn btn-xs inverse mt1 btn-light">inverse light </button>
+            <button class="btn btn-xs inverse mt1 btn-ebony-clay">inverse ebony-clay </button>
+            <button class="btn btn-xs inverse mt1 btn-sinbad">inverse sinbad </button>
+            <button class="btn btn-xs inverse mt1 btn-mandy">inverse mandy </button>
+            <button class="btn btn-xs inverse mt1 btn-tacao">inverse tacao </button>
+            <button class="btn btn-xs inverse mt1 btn-comet">inverse comet </button>
+          </div>
+          <div class="col-md-7">
+            <pre class="language-markup"><code>&lt;button class=&quot;btn inverse btn-primary&quot;&gt;Inverse primary&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn inverse btn-success&quot;&gt;Inverse success&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn inverse btn-info&quot;&gt;Inverse info&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn inverse btn-warning&quot;&gt;Inverse warning&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn inverse btn-danger&quot;&gt;Inverse danger&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn inverse btn-dark&quot;&gt;Inverse dark&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn inverse btn-regent-blue&quot;&gt;Inverse regent-blue&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn inverse btn-light-grey&quot;&gt;Inverse light-grey&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn inverse btn-light&quot;&gt;Inverse light&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn inverse btn-ebony-clay&quot;&gt;Inverse ebony-clay&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn inverse btn-sinbad&quot;&gt;Inverse sinbad&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn inverse btn-mandy&quot;&gt;Inverse mandy&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn inverse btn-tacao&quot;&gt;Inverse tacao&lt;/button&gt;&#13;</code><code>&lt;button class=&quot;btn inverse btn-comet&quot;&gt;Inverse comet&lt;/button&gt;&#13;</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="forms" class="section section-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1 class="text-uppercase text-light mb4">Forms</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <form>
+              <div class="form-group">
+                <input id="inputGroup" type="text" class="form-control">
+                <label for="inputGroup">Write a sentence...</label>
+              </div>
+            </form>
+            <form>
+              <div class="form-inline mb-15 text-center">
+                <div class="form-group">
+                  <input id="inputName" type="text" class="form-control">
+                  <label for="inputName">Your Name</label>
+                </div>
+                <div class="form-group">
+                  <input id="inputEmail" type="text" class="form-control">
+                  <label for="inputEmail">Your Email</label>
+                </div>
+                <button type="submit" class="btn"> <i class="pe-mi-notepad-2"></i> Join</button>
+              </div>
+            </form>
+            <form>
+              <div class="input-group">
+                <input id="inputNameGroup" type="text" class="form-control">
+                <label for="inputNameGroup" class="text-truncate">Subscribe!</label><span class="input-group-btn">
+                  <button class="btn">Notify me</button></span>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <pre class="language-markup"><code>&lt;!-- Form Group --&gt;
+&lt;form&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;inputGroup&quot;&gt;
+    &lt;label for=&quot;inputGroup&quot;&gt;Write a sentence...&lt;/label&gt;
+  &lt;/div&gt;
+&lt;form&gt; &#13; &#13;
+&lt;!-- Form Inline --&gt;
+&lt;form class=&quot;form-inline&quot;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;inputName&quot;&gt;
+    &lt;label for=&quot;inputName&quot;&gt;Your Name&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;inputEmail&quot;&gt;
+    &lt;label for=&quot;inputEmail&quot;&gt;Your Email&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;button class=&quot;btn btn-white&quot; type=&quot;submit&quot;&gt;
+    &lt;i class=&quot;pe-mi-notepad-2&quot;&gt; Join 
+  &lt;/button&gt;
+&lt;form&gt; &#13; &#13;
+&lt;!-- Input group --&gt;
+&lt;form&gt;
+  &lt;div class=&quot;input-group&quot;&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;inputNameGroup&quot;&gt;
+    &lt;label for=&quot;inputNameGroup&quot;&gt;Subscribe to our newsletter!&lt;/label&gt;
+    &lt;span class=&quot;input-group-btn&quot;&gt;
+      &lt;button class=&quot;btn&quot;&gt;Notify me&lt;/button&gt;
+    &lt;/span&gt;
+  &lt;/div&gt;
+&lt;form&gt; &#13; &#13;</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="extras" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1 class="text-uppercase text-light text-truncate">Extras</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3 class="text-uppercase text-light">Quotes</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <blockquote class="ebook-quote mt2">
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, molestias labore optio dolorum. Debitis eligendi ex ipsa veniam magni architecto.</p>
+              <footer>The new york times</footer>
+            </blockquote>
+            <blockquote class="ebook-quote mt4">
+              <p> Lorem ipsum dolor sit.</p>
+              <footer>Amet</footer>
+            </blockquote>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <pre class="language-markup"><code>&lt;blockquote class=&quot;ebook-quote&quot;&gt;
+  &lt;p&gt;Lorem ipsum dolor sit.&lt;/p&gt;
+  &lt;footer&gt;Amet&lt;/footer&gt;
+&lt;/blockquote&gt;</code></pre>
+          </div>
+        </div>
+        <div class="row mt4 mb4">
+          <div class="col-md-12 text-center">
+            <h3 class="text-uppercase text-light">Rating</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <p class="text-light text-uppercase">enabled</p>
+            <p class="ebook-rating">
+              <input type="radio" name="rating-1" id="star-11">
+              <label for="star-11">
+                <svg viewBox="0 0 16.4 14.1" class="svg-star">
+                  <use xlink:href="assets/img/symbols.svg#star"></use>
+                </svg>
+              </label>
+              <input type="radio" name="rating-1" id="star-12" checked>
+              <label for="star-12">
+                <svg viewBox="0 0 16.4 14.1" class="svg-star">
+                  <use xlink:href="assets/img/symbols.svg#star"></use>
+                </svg>
+              </label>
+              <input type="radio" name="rating-1" id="star-13">
+              <label for="star-13">
+                <svg viewBox="0 0 16.4 14.1" class="svg-star">
+                  <use xlink:href="assets/img/symbols.svg#star"></use>
+                </svg>
+              </label>
+              <input type="radio" name="rating-1" id="star-14">
+              <label for="star-14">
+                <svg viewBox="0 0 16.4 14.1" class="svg-star">
+                  <use xlink:href="assets/img/symbols.svg#star"></use>
+                </svg>
+              </label>
+              <input type="radio" name="rating-1" id="star-15">
+              <label for="star-15">
+                <svg viewBox="0 0 16.4 14.1" class="svg-star">
+                  <use xlink:href="assets/img/symbols.svg#star"></use>
+                </svg>
+              </label>
+            </p>
+            <p class="fz-12">The rating use the <span class="text-medium">font-size </span>of the element. In the example above, it is inside a <code>p</code> tag</p><br>
+            <h2 class="ebook-rating color-mandy">
+              <input type="radio" name="rating-2" id="star-21">
+              <label for="star-21">
+                <svg viewBox="0 0 16.4 14.1" class="svg-star">
+                  <use xlink:href="assets/img/symbols.svg#star"></use>
+                </svg>
+              </label>
+              <input type="radio" name="rating-2" id="star-22">
+              <label for="star-22">
+                <svg viewBox="0 0 16.4 14.1" class="svg-star">
+                  <use xlink:href="assets/img/symbols.svg#star"></use>
+                </svg>
+              </label>
+              <input type="radio" name="rating-2" id="star-23">
+              <label for="star-23">
+                <svg viewBox="0 0 16.4 14.1" class="svg-star">
+                  <use xlink:href="assets/img/symbols.svg#star"></use>
+                </svg>
+              </label>
+              <input type="radio" name="rating-2" id="star-24">
+              <label for="star-24">
+                <svg viewBox="0 0 16.4 14.1" class="svg-star">
+                  <use xlink:href="assets/img/symbols.svg#star"></use>
+                </svg>
+              </label>
+              <input type="radio" name="rating-2" id="star-25" checked>
+              <label for="star-25">
+                <svg viewBox="0 0 16.4 14.1" class="svg-star">
+                  <use xlink:href="assets/img/symbols.svg#star"></use>
+                </svg>
+              </label>
+            </h2>
+            <p class="fz-12">In this case, the rating is inside an<code>h2</code> tag with the class <code>color-mandy</code> to change the color. You could use any <code>color-*</code> class (<a href="#text-colors" class="text-medium">see all here</a>) to change the color. You could also control it modifying the<code>font-size</code> and <code>color</code> of the container element.</p>
+            <p class="text-light text-uppercase mt3">disabled</p><span class="ebook-rating color-regent-blue fz-20 disabled">
+              <input type="radio" name="rating-3" id="star-31">
+              <label for="star-31">
+                <svg viewBox="0 0 16.4 14.1" class="svg-star">
+                  <use xlink:href="assets/img/symbols.svg#star"></use>
+                </svg>
+              </label>
+              <input type="radio" name="rating-3" id="star-32">
+              <label for="star-32">
+                <svg viewBox="0 0 16.4 14.1" class="svg-star">
+                  <use xlink:href="assets/img/symbols.svg#star"></use>
+                </svg>
+              </label>
+              <input type="radio" name="rating-3" id="star-33" checked>
+              <label for="star-33">
+                <svg viewBox="0 0 16.4 14.1" class="svg-star">
+                  <use xlink:href="assets/img/symbols.svg#star"></use>
+                </svg>
+              </label>
+              <input type="radio" name="rating-3" id="star-34">
+              <label for="star-34">
+                <svg viewBox="0 0 16.4 14.1" class="svg-star">
+                  <use xlink:href="assets/img/symbols.svg#star"></use>
+                </svg>
+              </label>
+              <input type="radio" name="rating-3" id="star-35">
+              <label for="star-35">
+                <svg viewBox="0 0 16.4 14.1" class="svg-star">
+                  <use xlink:href="assets/img/symbols.svg#star"></use>
+                </svg>
+              </label></span>
+            <p class="fz-12">Adding the class <code>disabled</code> will block the rating at the 'checked' position</p>
+          </div>
+          <div class="col-md-7">
+            <pre class="language-markup"><code>&lt;p class=&quot;ebook-rating&quot;&gt;
+ &lt;input type=&quot;radio&quot; name=&quot;rating-1&quot; id=&quot;star-11&quot;&gt;
+ &lt;label for=&quot;star-11&quot;&gt;
+   &lt;svg viewBox=&quot;0 0 16.4 14.1&quot; class=&quot;svg-star&quot;&gt;
+     &lt;use xlink:href=&quot;assets/img/symbols.svg#star&quot;&gt;&lt;/use&gt;
+   &lt;/svg&gt;
+ &lt;/label&gt;
+ &lt;input type=&quot;radio&quot; name=&quot;rating-1&quot; id=&quot;star-12&quot; checked=&quot;&quot;&gt;
+ &lt;label for=&quot;star-12&quot;&gt;
+   &lt;svg viewBox=&quot;0 0 16.4 14.1&quot; class=&quot;svg-star&quot;&gt;
+     &lt;use xlink:href=&quot;assets/img/symbols.svg#star&quot;&gt;&lt;/use&gt;
+   &lt;/svg&gt;
+ &lt;/label&gt;
+ &lt;input type=&quot;radio&quot; name=&quot;rating-1&quot; id=&quot;star-13&quot;&gt;
+ &lt;label for=&quot;star-13&quot;&gt;
+   &lt;svg viewBox=&quot;0 0 16.4 14.1&quot; class=&quot;svg-star&quot;&gt;
+     &lt;use xlink:href=&quot;assets/img/symbols.svg#star&quot;&gt;&lt;/use&gt;
+   &lt;/svg&gt;
+ &lt;/label&gt;
+ &lt;input type=&quot;radio&quot; name=&quot;rating-1&quot; id=&quot;star-14&quot;&gt;
+ &lt;label for=&quot;star-14&quot;&gt;
+   &lt;svg viewBox=&quot;0 0 16.4 14.1&quot; class=&quot;svg-star&quot;&gt;
+     &lt;use xlink:href=&quot;assets/img/symbols.svg#star&quot;&gt;&lt;/use&gt;
+   &lt;/svg&gt;
+ &lt;/label&gt;
+ &lt;input type=&quot;radio&quot; name=&quot;rating-1&quot; id=&quot;star-15&quot;&gt;
+ &lt;label for=&quot;star-15&quot;&gt;
+   &lt;svg viewBox=&quot;0 0 16.4 14.1&quot; class=&quot;svg-star&quot;&gt;
+     &lt;use xlink:href=&quot;assets/img/symbols.svg#star&quot;&gt;&lt;/use&gt;
+   &lt;/svg&gt;
+ &lt;/label&gt;
+&lt;/p&gt;</code></pre>
+          </div>
+        </div>
+        <div class="row mt4 mb4">
+          <div class="col-md-12 text-center">
+            <h3 class="text-uppercase text-light">Ebook / Book</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <svg viewBox="0 0 473 668">
+              <use xlink:href="assets/img/symbols.svg#ipad-outline"></use>
+              <foreignObject x="24" y="64" width="423" height="526">
+                <body xmlns="http://www.w3.org/1999/xhtml">
+                  <div class="svg-foreign-ipad color-white">
+                    <svg viewBox="0 0 16.4 14.1" class="svg-main-icon color-sinbad">
+                      <use xlink:href="assets/img/symbols.svg#ipad-ebook"></use>
+                    </svg>
+                    <h2 class="text-uppercase color-mandy">Lorem ipsum</h2>
+                    <p>dolor sit amet, consectetur.</p>
+                    <svg viewBox="0 0 737.2 82.9" class="svg-icons">
+                      <use xlink:href="assets/img/symbols.svg#s-icons"></use>
+                    </svg>
+                  </div>
+                </body>
+              </foreignObject>
+            </svg>
+          </div>
+          <div class="col-md-8">
+            <p class="mt2 fz-16">To put custom content inside the 'outline-ipad' it's necessary to call the ipad graphic inside an <code>svg</code> tag and all the content inside a <code>div</code> with the class <code>svg-foreign-ipad</code> inside the <code>foreignObject</code> tag</p>
+            <pre class="language-markup"><code>&lt;svg viewBox=&quot;0 0 473 668&quot;&gt;
+ &lt;use xlink:href=&quot;assets/img/symbols.svg#ipad-outline&quot;&gt;&lt;/use&gt;
+ &lt;foreignObject x=&quot;24&quot; y=&quot;64&quot; width=&quot;423&quot; height=&quot;526&quot;&gt;
+     &lt;div class=&quot;svg-foreign-ipad color-white&quot;&gt;
+       &lt;!-- Foreign content start here --&gt;
+       &lt;svg viewBox=&quot;0 0 16.4 14.1&quot; class=&quot;svg-crown color-sinbad&quot;&gt;
+         &lt;use xlink:href=&quot;assets/img/symbols.svg#ipad-ebook&quot;&gt;&lt;/use&gt;
+       &lt;/svg&gt;
+       &lt;h2 class=&quot;text-uppercase color-mandy&quot;&gt;Lorem ipsum&lt;/h2&gt;
+       &lt;p&gt;dolor sit amet, consectetur.&lt;/p&gt;
+       &lt;svg viewBox=&quot;0 0 737.2 82.9&quot; class=&quot;svg-icons&quot;&gt;
+         &lt;use xlink:href=&quot;assets/img/symbols.svg#s-icons&quot;&gt;&lt;/use&gt;
+       &lt;/svg&gt;
+       &lt;!-- /foreign content --&gt;
+     &lt;/div&gt;
+ &lt;/foreignObject&gt;
+&lt;/svg&gt;</code></pre>
+          </div>
+        </div>
+        <div class="row mt4">
+          <div class="col-md-6">
+            <p class="mt2 fz-16">To put content inside a ‘book’, it's necessary to call the graphic inside an <code>svg</code> tag and all the content inside the <code>foreignObject</code> tag. </p>
+            <p class="fz-16">The <code>defs</code> tag controls the gradient of the cover.</p>
+            <p class="fz-16">Add a color class like <code>color-mandy</code>  to the container <code>svg</code> to control the book color.</p>
+            <div class="row mt3">
+              <div class="col-md-4 text-center">
+                <svg viewBox="0 0 495.8 658" class="color-mandy">
+                  <defs>
+                    <linearGradient id="gradient" gradientUnits="userSpaceOnUse" x1="14" y1="328.5" x2="49" y2="328.5">
+                      <stop offset="0" stop-color="rgba(0,0,0,0)"></stop>
+                      <stop offset="1" stop-color="rgba(0,0,0,0.1)"></stop>
+                    </linearGradient>
+                  </defs>
+                  <use xlink:href="assets/img/symbols.svg#book_base"></use>
+                  <foreignObject x="24" y="64" width="423" height="526">
+                    <body xmlns="http://www.w3.org/1999/xhtml">
+                      <svg viewBox="0 0 16.4 14.1" class="svg-main-icon color-white">
+                        <use xlink:href="assets/img/symbols.svg#ipad-outline"></use>
+                      </svg>
+                      <h2 class="color-white">Book of ebook</h2>
+                      <h3 class="color-white"> vol.1</h3>
+                    </body>
+                  </foreignObject>
+                </svg>
+              </div>
+              <div class="col-md-4 text-center">
+                <svg viewBox="0 0 495.8 658" class="color-ebony-clay">
+                  <defs>
+                    <linearGradient id="gradient" gradientUnits="userSpaceOnUse" x1="14" y1="328.5" x2="49" y2="328.5">
+                      <stop offset="0" stop-color="rgba(0,0,0,0)"></stop>
+                      <stop offset="1" stop-color="rgba(0,0,0,0.1)"></stop>
+                    </linearGradient>
+                  </defs>
+                  <use xlink:href="assets/img/symbols.svg#book_base"></use>
+                  <foreignObject x="24" y="64" width="423" height="526">
+                    <body xmlns="http://www.w3.org/1999/xhtml">
+                      <svg viewBox="0 0 16.4 14.1" class="svg-main-icon color-white">
+                        <use xlink:href="assets/img/symbols.svg#ipad-outline"></use>
+                      </svg>
+                      <h2 class="color-white">Book of ebook</h2>
+                      <h3 class="color-white"> vol.2</h3>
+                    </body>
+                  </foreignObject>
+                </svg>
+              </div>
+              <div class="col-md-4 text-center">
+                <svg viewBox="0 0 495.8 658" class="color-regent-blue">
+                  <defs>
+                    <linearGradient id="gradient" gradientUnits="userSpaceOnUse" x1="14" y1="328.5" x2="49" y2="328.5">
+                      <stop offset="0" stop-color="rgba(0,0,0,0)"></stop>
+                      <stop offset="1" stop-color="rgba(0,0,0,0.1)"></stop>
+                    </linearGradient>
+                  </defs>
+                  <use xlink:href="assets/img/symbols.svg#book_base"></use>
+                  <foreignObject x="24" y="64" width="423" height="526">
+                    <body xmlns="http://www.w3.org/1999/xhtml">
+                      <svg viewBox="0 0 16.4 14.1" class="svg-main-icon color-white">
+                        <use xlink:href="assets/img/symbols.svg#ipad-outline"></use>
+                      </svg>
+                      <h2 class="color-white">Book of ebook</h2>
+                      <h3 class="color-white"> vol.3</h3>
+                    </body>
+                  </foreignObject>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <pre class="language-markup"><code>&lt;svg viewBox=&quot;0 0 495.8 658&quot; class=&quot;color-mandy&quot;&gt;
+ &lt;defs&gt;
+    &lt;linearGradient id=&quot;gradient&quot; gradientUnits=&quot;userSpaceOnUse&quot; x1=&quot;14&quot; y1=&quot;328.5&quot; x2=&quot;49&quot; y2=&quot;328.5&quot;&gt;
+      &lt;stop offset=&quot;0&quot; stop-color=&quot;rgba(0,0,0,0)&quot;&gt;&lt;/stop&gt;
+      &lt;stop offset=&quot;1&quot; stop-color=&quot;rgba(0,0,0,0.1)&quot;&gt;&lt;/stop&gt;
+    &lt;/linearGradient&gt;
+  &lt;/defs&gt;
+  &lt;use xlink:href=&quot;assets/img/symbols.svg#book_base&quot;&gt;&lt;/use&gt;
+  &lt;foreignObject x=&quot;24&quot; y=&quot;64&quot; width=&quot;423&quot; height=&quot;526&quot;&gt;
+      &lt;svg viewBox=&quot;0 0 16.4 14.1&quot; class=&quot;svg-main-icon color-white&quot;&gt;
+        &lt;use xlink:href=&quot;assets/img/symbols.svg#ipad-outline&quot;&gt;&lt;/use&gt;
+      &lt;/svg&gt;
+      &lt;h2 class=&quot;color-white&quot;&gt;Book of ebook&lt;/h2&gt;
+      &lt;h3 class=&quot;color-white&quot;&gt; vol.1&lt;/h3&gt;
+ &lt;/foreignObject&gt;
+&lt;/svg&gt;</code></pre>
+          </div>
+        </div>
+        <div class="row mt4 mb4">
+          <div class="col-md-12 text-center">
+            <h3 class="text-uppercase text-light">Features</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <div class="media ebook-features">
+              <div class="media-left"><i class="pe-mi-push-pin"></i></div>
+              <div class="media-body">
+                <h3 class="feature-title text-bold text-uppercase">Feature title</h3>
+                <p class="fz-14"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel maxime odit veniam voluptatem, voluptatibus ipsa omnis voluptatum eveniet illo explicabo!</p>
+              </div>
+            </div>
+            <div class="media ebook-features">
+              <div class="media-left color-sinbad"><i class="pe-mi-bicycle"></i></div>
+              <div class="media-body">
+                <h4 class="feature-title text-medium color-sinbad">Go by bike</h4>
+                <p class="fz-12"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel maxime odit veniam voluptatem, voluptatibus ipsa.</p>
+              </div>
+            </div>
+            <div class="media ebook-features">
+              <div class="media-left color-mandy"><i class="pe-mi-ways"></i></div>
+              <div class="media-body">
+                <h4 class="feature-title text-medium color-mandy">Go everywhere</h4>
+                <p class="fz-12"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, nulla.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <pre class="language-markup"><code>&lt;div class=&quot;media ebook-features&quot;&gt;
+ &lt;div class=&quot;media-left&quot;&gt;&lt;i class=&quot;pe-mi-push-pin&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+ &lt;div class=&quot;media-body&quot;&gt;
+   &lt;h3 class=&quot;feature-title text-bold text-uppercase&quot;&gt;Feature title&lt;/h3&gt;
+   &lt;p class=&quot;fz-14&quot;&gt; Lorem ipsum dolor sit amet...&lt;/p&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--&gt; another &lt;--&gt;
+&lt;div class=&quot;media ebook-features&quot;&gt;
+  &lt;div class=&quot;media-left color-sinbad&quot;&gt;&lt;i class=&quot;pe-mi-bicycle&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+  &lt;div class=&quot;media-body&quot;&gt;
+    &lt;h4 class=&quot;feature-title text-medium color-sinbad&quot;&gt;Go by bike&lt;/h4&gt;
+    &lt;p class=&quot;fz-12&quot;&gt; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel maxime odit veniam voluptatem, voluptatibus ipsa.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+        <div class="row mt4 mb4">
+          <div class="col-md-12 text-center">
+            <h3 class="text-uppercase text-light">Menu</h3>
+            <p class="fz-14">You can control the navigation color adding a class <code class="fz-12">nav-mandy</code> to the <code class="fz-12">navbar</code> element.</p>
+            <p class="fz-14">The available classes are: <code class="fz-12">nav-regent-blue</code>, <code class="fz-12">nav-light-grey</code>, <code class="fz-12">nav-light</code>, <code class="fz-12">nav-ebony-clay</code>, <code class="fz-12">nav-sinbad</code>, <code class="fz-12">nav-mandy</code>, <code class="fz-12">nav-tacao</code>, <code class="fz-12">nav-comet</code>. <code class="fz-12">nav-btn</code> inherits its color from <code class="fz-12">navbar</code> .
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <nav class="navbar pr nav-mandy">
+              <ul class="nav nav-pills">
+                <li role="presentation"><a href="#0" class="text-medium"> <span>LINK 1</span><i class="pe-mi-look"></i></a></li>
+                <li role="presentation" class="active"><a href="#0" class="text-medium"> <span>LINK 2</span><i class="pe-mi-unlock"></i></a></li>
+                <li role="presentation"><a href="#0" class="text-medium"> <span>LINK 3</span><i class="pe-mi-diary"></i></a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-md-4">
+            <nav class="navbar pr nav-sinbad">
+              <ul class="nav nav-pills">
+                <li role="presentation" class="active"><a href="#0" class="text-medium"> <span>LINK 1</span><i class="pe-mi-rule-2"></i></a></li>
+                <li role="presentation"><a href="#0" class="text-medium"> <span>LINK 2</span><i class="pe-mi-file-box"></i></a></li>
+                <li role="presentation"><a href="#0" class="text-medium"> <span>LINK 3</span><i class="pe-mi-phone"></i></a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-md-4">
+            <nav class="navbar pr nav-light">
+              <ul class="nav nav-pills">
+                <li role="presentation"><a href="#0" class="text-medium"> <span>LINK 1</span><i class="pe-mi-share"></i></a></li>
+                <li role="presentation"><a href="#0" class="text-medium"> <span>LINK 2</span><i class="pe-mi-camera-3"></i></a></li>
+                <li role="presentation" class="active"><a href="#0" class="text-medium"> <span>LINK 3</span><i class="pe-mi-speaker-3"></i></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="row mt2">
+          <div class="col-md-12">
+            <pre class="language-markup"><code>&lt;nav class=&quot;navbar nav-mandy&quot;&gt;
+  &lt;ul class=&quot;nav nav-pills&quot;&gt;
+     &lt;li&gt;
+       &lt;a href=&quot;#0&quot; class=&quot;text-medium&quot;&gt;
+         &lt;span&gt;LINK 1&lt;/span&gt;&lt;i class=&quot;pe-mi-look&quot;&gt;&lt;/i&gt;
+       &lt;/a&gt;
+     &lt;/li&gt;
+     &lt;li class=&quot;active&quot;&gt;
+       &lt;a href=&quot;#0&quot; class=&quot;text-medium&quot;&gt;
+         &lt;span&gt;LINK 2&lt;/span&gt;&lt;i class=&quot;pe-mi-unlock&quot;&gt;&lt;/i&gt;
+       &lt;/a&gt;
+     &lt;/li&gt;
+     &lt;li&gt;
+       &lt;a href=&quot;#0&quot; class=&quot;text-medium&quot;&gt; 
+         &lt;span&gt;LINK 3&lt;/span&gt;&lt;i class=&quot;pe-mi-diary&quot;&gt;&lt;/i&gt;
+       &lt;/a&gt;
+     &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;&#13;&#13;
+&lt;button class=&quot;nav-btn&quot;&gt;
+   &lt;span class=&quot;lines&quot;&gt;&lt;/span&gt;
+&lt;/button&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="helpers" class="section section-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1 class="text-uppercase text-light mb4">Helpers</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <h4 class="text-uppercase text-light">Font size &amp; Line height</h4>
+            <p class="fz-14">You can easily change the <code class="fz-12">font-size</code> and the <code class="fz-12">line-height</code> with our specific multiplicator classes that will multiply the element inherited font-size/line-height. Those classes use <code class="fz-12">em</code> as a multiplier class. For example: adding <code class="fz-12">em-1-5</code> to an element with a parent <code class="fz-12">font-size:10px</code> will result in a 15px font size (10px * 1.5em = 15px).</p>
+            <hr>
+            <p class="mb0 fz-14">Below the classes for <code class="fz-12">font-size</code></p>
+            <p class="fz-12"> <code>em-0-25</code> - <code>em-0-5</code> - <code>em-0-75</code> - <code>em-1-25</code> - <code>em-1-5</code> - <code>em-1-75</code> - <code>em-2</code> - <code>em-2-5</code> - <code>em-3</code> - <code>em-3-5</code> - <code>em-4</code></p>
+            <p class="mb0 fz-14">Below the classes for <code class="fz-12">line-height</code></p>
+            <p class="fz-12"><code>lh-0-25</code> - <code>lh-0-5</code> - <code>lh-0-75</code> - <code>lh-1-25</code> - <code>lh-1-5</code> - <code>lh-1-75</code> - <code>lh-2</code> - <code>lh-2-5</code> - <code>lh-3</code> - <code>lh-3-5</code> - <code>lh-4</code></p>
+            <hr>
+            <p class="fz-14">Here is an example <code class="fz-12">&lt;p class=&quot;em-1-75&quot;&gt;Lorem ipsum (18px * 1.75em = 31.5px)&lt;/p&gt;</code></p>
+            <p class="em-1-75">Lorem ipsum (18px * 1.75em = 31.5px)</p>
+            <p class="fz-14">Here is another example <code class="fz-12">&lt;p class=&quot;lh-0-75&quot;&gt;Lorem ipsum... (18px * 0.75em = 13.5px)&lt;/p&gt;</code></p>
+            <p class="lh-0-75"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse saepe, debitis repellat maxime porro autem suscipit veniam mollitia neque, tempore laboriosam vel dicta. Sint, aperiam. (18px * 0.75em = 13.5px)</p>
+            <hr>
+            <p class="fz-14">You can also use some more specific font size helpers like for instance the class <code class="fz-12">fz-18</code> wich equals to <code class="fz-12">font-size:18px</code> . As default we included a list of <code class="fz-12">fz-*</code> classes <span class="text-medium">from 10 to 20 in incremental steps of 1px</span>. This way you can mix a <code class="fz-12">fz-*</code> class and a <code class="fz-12">em-*</code> class to set almost any font-size/line-height for any specific element. If needed you can change the mixins in our <code class="fz-12">_modules.scss</code> file.</p>
+          </div>
+        </div>
+        <div class="row mt4">
+          <div class="col-md-5">
+            <h4 class="text-uppercase text-light">Horizontal rules</h4>
+            <hr>
+            <hr class="medium">
+            <hr class="bold">
+            <hr class="short">
+          </div>
+          <div class="col-md-7 mt3">
+            <pre class="language-markup"><code>&lt;hr&gt;
+&lt;hr class=&quot;medium&quot;&gt;
+&lt;hr class=&quot;bold&quot;&gt;
+&lt;hr class=&quot;short&quot;&gt;</code></pre>
+          </div>
+        </div>
+        <div class="row mt4">
+          <div class="col-md-6">
+            <h4 class="text-uppercase text-light">RHYTHM SPACING</h4>
+            <p class="fz-14">We have created a list of spacing class helpers to override any element general spacing while maintaining the rythm. For instance you can use those classes: <code class="fz-12">mb1</code>,  <code class="fz-12">mb2</code>,  <code class="fz-12">mb3</code>,  <code class="fz-12">mb4</code>,  <code class="fz-12">mb5</code> to add a margin-bottom to an element.</p>
+            <p class="fz-14">To respect the spacing rythm those helper classes are based on the<code class="fz-12">html { font-size: ... }</code> value. For example, the classes that ends with: <br><span class="text-medium">1 </span> are <code class="fz-12">0.5rem</code> relative to the element html font-size <br><span class="text-medium">2 </span> are <code class="fz-12">1rem</code> relative to the element html font-size <br><span class="text-medium">3 </span> are <code class="fz-12">2rem</code> relative to the element html font-size <br><span class="text-medium">4 </span> are <code class="fz-12">4rem</code> relative to the element html font-size <br><span class="text-medium">5 </span> are <code class="fz-12">8rem</code> relative to the element html font-size <br>
+              <p class="fz-14">There is a sass <code class="fz-12">@mixin</code> to generate this relation which you can find in the <code class="fz-12">_modules.scss</code> file.</p>
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h4 class="text-uppercase text-light">SPECIFIC SPACING IN PIXELS</h4>
+            <p-fz-14>We also have a list of spacing helpers that allow you to control the spacing with pixel. For example, the class <code class="fz-12">mb-15</code> adds a <code class="fz-12">margin-bottom: 15px</code> to the elememt. (Note that <code class="fz-12">mt-*</code> is px based and <code class="fz-12">mt*</code> is rem based)</p-fz-14>
+            <p class="fz-14">As a default there are classes to control margin and padding from 5px to 25px in incremental steps of 5px. For example: <code class="fz-12">mt-5</code>, <code class="fz-12">mt-10</code>, <code class="fz-12">mt-15</code>, <code class="fz-12">mt-20</code>, <code class="fz-12">mt-25</code>. </p>
+            <p class="fz-14">As usual you can edit and expand those classes with our <code class="fz-12">@mixin</code> in the <code class="fz-12">_modules.scss</code> file.</p>
+          </div>
+        </div>
+        <div class="row mt4">
+          <div class="col-md-6">
+            <h4 class="text-uppercase text-light">Spacing <small>y margins</small></h4>
+            <div class="row">
+              <div class="col-xs-4 col-sm-2 col-md-2 text-center">
+                <button class="btn btn-xs btn-block p2 mt5 mb5"><i class="pe-mi-chair-1"></i></button>
+                <button class="btn btn-xs btn-block p2 m0"><i class="pe-mi-chair-1"></i></button>
+              </div>
+              <div class="col-xs-4 col-sm-2 col-md-2 text-center">
+                <button class="btn btn-xs btn-block p2 mt4 mb4"><i class="pe-mi-chair-1"></i></button>
+                <button class="btn btn-xs btn-block p2 m0"><i class="pe-mi-chair-1"></i></button>
+              </div>
+              <div class="col-xs-4 col-sm-2 col-md-2 text-center">
+                <button class="btn btn-xs btn-block p2 mt3 mb3"><i class="pe-mi-chair-1"></i></button>
+                <button class="btn btn-xs btn-block p2 m0"><i class="pe-mi-chair-1"></i></button>
+              </div>
+              <div class="col-xs-4 col-sm-2 col-md-2 text-center">
+                <button class="btn btn-xs btn-block p2 mt2 mb2"><i class="pe-mi-chair-1"></i></button>
+                <button class="btn btn-xs btn-block p2 m0"><i class="pe-mi-chair-1"></i></button>
+              </div>
+              <div class="col-xs-4 col-sm-2 col-md-2 text-center">
+                <button class="btn btn-xs btn-block p2 mt1 mb1"><i class="pe-mi-chair-1"></i></button>
+                <button class="btn btn-xs btn-block p2 m0"><i class="pe-mi-chair-1"></i></button>
+              </div>
+              <div class="col-xs-4 col-sm-2 col-md-2 text-center">
+                <button class="btn btn-xs btn-block p2 mt0 mb0"><i class="pe-mi-chair-1"></i></button>
+                <button class="btn btn-xs btn-block p2 m0"><i class="pe-mi-chair-1"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mt3">
+            <pre class="language-markup"><code>&lt;button class=&quot;btn mt5 mb5&quot;&gt;...&lt;/button&gt;
+&lt;button class=&quot;btn m0&quot;&gt;...&lt;/button&gt;<code>&#13;&#13;</code></code><code>&lt;button class=&quot;btn mt4 mb4&quot;&gt;...&lt;/button&gt;
+&lt;button class=&quot;btn m0&quot;&gt;...&lt;/button&gt;<code>&#13;&#13;</code></code><code>&lt;button class=&quot;btn mt3 mb3&quot;&gt;...&lt;/button&gt;
+&lt;button class=&quot;btn m0&quot;&gt;...&lt;/button&gt;<code>&#13;&#13;</code></code><code>&lt;button class=&quot;btn mt2 mb2&quot;&gt;...&lt;/button&gt;
+&lt;button class=&quot;btn m0&quot;&gt;...&lt;/button&gt;<code>&#13;&#13;</code></code><code>&lt;button class=&quot;btn mt1 mb1&quot;&gt;...&lt;/button&gt;
+&lt;button class=&quot;btn m0&quot;&gt;...&lt;/button&gt;<code>&#13;&#13;</code></code><code>&lt;button class=&quot;btn mt0 mb0&quot;&gt;...&lt;/button&gt;
+&lt;button class=&quot;btn m0&quot;&gt;...&lt;/button&gt;</code></pre>
+          </div>
+        </div>
+        <div class="row mt4">
+          <div class="col-md-6">
+            <h4 class="text-uppercase text-light">Spacing <small>negative margins</small></h4>
+            <button class="btn btn-xs btn-block p2 mxn1"><span class="text-normalcase">.mxn1</span></button>
+            <button class="btn btn-xs btn-block p2 mxn2"><span class="text-normalcase">.mxn2</span></button>
+            <button class="btn btn-xs btn-block p2 mxn3"><span class="text-normalcase">.mxn3</span></button>
+            <button class="btn btn-xs btn-block p2 mxn4"><span class="text-normalcase">.mxn4</span></button>
+            <button class="btn btn-xs btn-block p2 mxn5"><span class="text-normalcase">.mxn5</span></button>
+          </div>
+          <div class="col-md-6 mt3">
+            <pre class="language-markup"><code>&lt;button class=&quot;btn mxn1&quot;&gt;mxn1&lt;/button&gt;<code>&#13;&#13;</code></code><code>&lt;button class=&quot;btn mxn2&quot;&gt;mxn2&lt;/button&gt;<code>&#13;&#13;</code></code><code>&lt;button class=&quot;btn mxn3&quot;&gt;mxn3&lt;/button&gt;<code>&#13;&#13;</code></code><code>&lt;button class=&quot;btn mxn4&quot;&gt;mxn4&lt;/button&gt;<code>&#13;&#13;</code></code><code>&lt;button class=&quot;btn mxn5&quot;&gt;mxn5&lt;/button&gt;<code>&#13;&#13;</code></code></pre>
+          </div>
+        </div>
+        <div class="row mt4">
+          <div class="col-md-12">
+            <h4 class="text-uppercase text-light">Spacing <small>x margins</small></h4>
+            <div class="text-center">
+              <button class="btn btn-xs mb2 m0"> <span class="text-normalcase text-light">m0</span></button>
+              <button class="btn btn-xs mb2 ml5 mr5"> <span class="text-normalcase text-light">ml5 mr5</span></button>
+              <button class="btn btn-xs mb2 m0"> <span class="text-normalcase text-light">m0</span></button><br>
+              <button class="btn btn-xs mb2 m0"> <span class="text-normalcase text-light">m0</span></button>
+              <button class="btn btn-xs mb2 ml4 mr4"> <span class="text-normalcase text-light">ml4 mr4</span></button>
+              <button class="btn btn-xs mb2 m0"> <span class="text-normalcase text-light">m0</span></button><br>
+              <button class="btn btn-xs mb2 m0"> <span class="text-normalcase text-light">m0</span></button>
+              <button class="btn btn-xs mb2 ml3 mr3"> <span class="text-normalcase text-light">ml3 mr3</span></button>
+              <button class="btn btn-xs mb2 m0"> <span class="text-normalcase text-light">m0</span></button><br>
+              <button class="btn btn-xs mb2 m0"> <span class="text-normalcase text-light">m0</span></button>
+              <button class="btn btn-xs mb2 ml2 mr2"> <span class="text-normalcase text-light">ml2 mr2</span></button>
+              <button class="btn btn-xs mb2 m0"> <span class="text-normalcase text-light">m0</span></button><br>
+              <button class="btn btn-xs mb2 m0"> <span class="text-normalcase text-light">m0</span></button>
+              <button class="btn btn-xs mb2 ml1 mr1"> <span class="text-normalcase text-light">ml1 mr1</span></button>
+              <button class="btn btn-xs mb2 m0"> <span class="text-normalcase text-light">m0</span></button><br>
+              <button class="btn btn-xs mb2 mx-auto"><span class="text-normalcase text-light">mx-auto</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <pre class="language-markup"><code>&lt;button class=&quot;btn m0&quot;&gt;m0&lt;/button&gt;&#13;
+&lt;button class=&quot;btn ml5 mr5&quot;&gt;ml5 mr5&lt;button&gt; &#13;
+&lt;button class=&quot;btn m0&quot;&gt;m0&lt;/button&gt;&#13;&#13;</code><code>&lt;button class=&quot;btn m0&quot;&gt;m0&lt;/button&gt;&#13;
+&lt;button class=&quot;btn ml4 mr4&quot;&gt;ml4 mr4&lt;button&gt; &#13;
+&lt;button class=&quot;btn m0&quot;&gt;m0&lt;/button&gt;&#13;&#13;</code><code>&lt;button class=&quot;btn m0&quot;&gt;m0&lt;/button&gt;&#13;
+&lt;button class=&quot;btn ml3 mr3&quot;&gt;ml3 mr3&lt;button&gt; &#13;
+&lt;button class=&quot;btn m0&quot;&gt;m0&lt;/button&gt;&#13;&#13;</code><code>&lt;button class=&quot;btn m0&quot;&gt;m0&lt;/button&gt;&#13;
+&lt;button class=&quot;btn ml2 mr2&quot;&gt;ml2 mr2&lt;button&gt; &#13;
+&lt;button class=&quot;btn m0&quot;&gt;m0&lt;/button&gt;&#13;&#13;</code><code>&lt;button class=&quot;btn m0&quot;&gt;m0&lt;/button&gt;&#13;
+&lt;button class=&quot;btn ml1 mr1&quot;&gt;ml1 mr1&lt;button&gt; &#13;
+&lt;button class=&quot;btn m0&quot;&gt;m0&lt;/button&gt;&#13;&#13;</code><code>&lt;button class=&quot;btn mx-auto&quot;&gt;mx-auto&lt;/button&gt; &#13;</code></pre>
+          </div>
+        </div>
+        <div class="row mt4">
+          <div class="col-md-12">
+            <h4 class="text-uppercase text-light">Spacing <small>paddings</small></h4>
+            <div class="text-center">
+              <button class="btn p1 mb1"> <span class="text-normalcase text-thin">p1</span></button>
+              <button class="btn p2 mb1"> <span class="text-normalcase text-thin">p2</span></button>
+              <button class="btn p3 mb1"> <span class="text-normalcase text-thin">p3</span></button>
+              <button class="btn p4 mb1"> <span class="text-normalcase text-thin">p4</span></button>
+              <button class="btn p5 mb1"> <span class="text-normalcase text-thin">p5</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <pre class="language-markup"><code>&lt;button class=&quot;btn p1&quot;&gt;p1&lt;/button&gt; &#13;</code><code>&lt;button class=&quot;btn p2&quot;&gt;p2&lt;/button&gt; &#13;</code><code>&lt;button class=&quot;btn p3&quot;&gt;p3&lt;/button&gt; &#13;</code><code>&lt;button class=&quot;btn p4&quot;&gt;p4&lt;/button&gt; &#13;</code><code>&lt;button class=&quot;btn p5&quot;&gt;p5&lt;/button&gt; &#13;</code></pre>
+          </div>
+        </div>
+        <div class="row mt4">
+          <div class="col-md-12">
+            <h4 class="text-uppercase text-light">Spacing <small>X paddings</small></h4>
+            <div class="text-center">
+              <button class="btn px1 mb1"> <span class="text-normalcase text-thin">px1</span></button>
+              <button class="btn px2 mb1"> <span class="text-normalcase text-thin">px2</span></button>
+              <button class="btn px3 mb1"> <span class="text-normalcase text-thin">px3</span></button>
+              <button class="btn px4 mb1"> <span class="text-normalcase text-thin">px4</span></button>
+              <button class="btn px5 mb1"> <span class="text-normalcase text-thin">px5</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <pre class="language-markup"><code>&lt;button class=&quot;btn px1&quot;&gt;px1&lt;/button&gt; &#13;</code><code>&lt;button class=&quot;btn px2&quot;&gt;px2&lt;/button&gt; &#13;</code><code>&lt;button class=&quot;btn px3&quot;&gt;px3&lt;/button&gt; &#13;</code><code>&lt;button class=&quot;btn px4&quot;&gt;px4&lt;/button&gt; &#13;</code><code>&lt;button class=&quot;btn px5&quot;&gt;px5&lt;/button&gt; &#13;</code></pre>
+          </div>
+        </div>
+        <div class="row mt4">
+          <div class="col-md-12">
+            <h4 class="text-uppercase text-light">Spacing <small>Y paddings</small></h4>
+            <div class="text-center">
+              <button class="btn py1 mb1"> <span class="text-normalcase text-thin">py1</span></button>
+              <button class="btn py2 mb1"> <span class="text-normalcase text-thin">py2</span></button>
+              <button class="btn py3 mb1"> <span class="text-normalcase text-thin">py3</span></button>
+              <button class="btn py4 mb1"> <span class="text-normalcase text-thin">py4</span></button>
+              <button class="btn py5 mb1"> <span class="text-normalcase text-thin">py5</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <pre class="language-markup"><code>&lt;button class=&quot;btn py1&quot;&gt;py1&lt;/button&gt; &#13;</code><code>&lt;button class=&quot;btn py2&quot;&gt;py2&lt;/button&gt; &#13;</code><code>&lt;button class=&quot;btn py3&quot;&gt;py3&lt;/button&gt; &#13;</code><code>&lt;button class=&quot;btn py4&quot;&gt;py4&lt;/button&gt; &#13;</code><code>&lt;button class=&quot;btn py5&quot;&gt;py5&lt;/button&gt; &#13;</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="icons" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1 class="text-uppercase text-light mb4">Icons</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <h4 class="text-uppercase text-light">Media Icons <small class="fz-12">/ <a href="http://themes-pixeden.com/font-demos/media-icons/">Pixeden Icons Website</a></small></h4>
+            <button class="btn btn-sm"><i class="pe-mi-drawers-1"></i></button>
+            <button class="btn btn-sm"><i class="pe-mi-mail-box"></i></button>
+            <button class="btn btn-sm"><i class="pe-mi-flag-1"></i></button>
+            <button class="btn btn-sm"><i class="pe-mi-speaker-2"></i></button><br>
+            <button class="btn btn-sm mt1 btn-mandy inverse"><i class="pe-mi-video-camera-1 mr2"></i>Record</button>
+            <button class="btn btn-sm mt1 btn-sinbad inverse"><i class="pe-mi-joystick-1 mr2"></i>Game</button>
+          </div>
+          <div class="col-md-6">
+            <pre class="language-markup"><code>&lt;button class=&quot;btn btn-sm&quot;&gt;
+   &lt;i class=&quot;pe-mi-drawers-1&quot;&gt;&lt;/i&gt;
+&lt;/button&gt; &#13;&#13;
+&lt;button class=&quot;btn btn-sm btn-mandy inverse&quot;&gt;
+   &lt;i class=&quot;pe-mi-video-camera-1 mr2&quot;&gt;&lt;/i&gt; Record
+&lt;/button&gt; &#13;</code></pre>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <h4 class="text-uppercase text-light">Social Icons <small class="fz-12">/ <a href="http://themes-pixeden.com/font-demos/social/">Pixeden Icons Website</a></small></h4>
+            <button class="btn btn-sm btn-warning inverse"><i class="pe-so-amazon"></i></button>
+            <button class="btn btn-sm btn-mandy inverse"><i class="pe-so-youtube-2"></i></button>
+            <button class="btn btn-sm btn-regent-blue inverse"><i class="pe-so-twitter"></i></button><br>
+            <ul class="pe-social mt2">
+              <li><a href="#0"><i class="pe-so-skype pe-2x pe-color"></i></a></li>
+              <li><a href="#0"><i class="pe-so-sass pe-2x pe-bg pe-bg-cl"></i></a></li>
+              <li> <a href="#0"><i class="pe-so-dropbox pe-hover pe-2x"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <pre class="language-markup"><code>&lt;button class=&quot;btn btn-sm btn-warning inverse&quot;&gt;
+   &lt;i class=&quot;pe-so-amazon&quot;&gt;&lt;/i&gt;
+&lt;/button&gt; &#13;&#13;
+&lt;ul class=&quot;pe-social&quot;&gt;
+   &lt;li&gt;
+     &lt;i class=&quot;pe-so-skype pe-2x pe-color&quot;&gt;&lt;/i&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+     &lt;i class=&quot;pe-so-sass pe-2x pe-bg pe-bg-cl&quot;&gt;&lt;/i&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+     &lt;i class=&quot;pe-so-dropbox pe-hover pe-2x&quot;&gt;&lt;/i&gt;
+   &lt;/li&gt;
+&lt;/ul&gt; &#13;</code></pre>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <h4 class="text-uppercase text-light">SVG Icons <small>/ custom</small></h4>
+            <p class="fz-14">In different parts of Ebook we use custom SVG icons from a set packed in the file <code class="fz-12">symbols.svg</code> inside the img/ folder</p>
+            <p class="fz-14">You can change the fill color by adding a color class modifier to change the color attribute of the svg.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <svg style="width: 70px" class="color-tacao mr3">
+              <use xlink:href="assets/img/symbols.svg#s-world"></use>
+            </svg>
+            <svg style="width: 70px" class="color-regent-blue mr3">
+              <use xlink:href="assets/img/symbols.svg#s-dog"></use>
+            </svg>
+            <svg style="width: 70px" class="color-mandy mr3">
+              <use xlink:href="assets/img/symbols.svg#s-et"></use>
+            </svg>
+            <svg style="width: 70px" class="color-sinbad mr3">
+              <use xlink:href="assets/img/symbols.svg#s-plate"></use>
+            </svg>
+          </div>
+          <div class="col-md-6">
+            <pre class="language-markup"><code>&lt;svg class=&quot;color-tacao&quot;&gt;
+   &lt;use xlink:href=&quot;img/symbols.svg#s-world&quot;&gt;&lt;/use&gt;
+&lt;/svg&gt; &#13;&#13;
+&lt;svg class=&quot;color-regent-blue&quot;&gt;
+   &lt;use xlink:href=&quot;img/symbols.svg#s-dog&quot;&gt;&lt;/use&gt;
+&lt;/svg&gt; &#13;&#13;
+&lt;svg class=&quot;color-mandy&quot;&gt;
+   &lt;use xlink:href=&quot;img/symbols.svg#s-et&quot;&gt;&lt;/use&gt;
+&lt;/svg&gt; &#13;&#13;
+&lt;svg class=&quot;color-sinbad&quot;&gt;
+   &lt;use xlink:href=&quot;img/symbols.svg#s-plate&quot;&gt;&lt;/use&gt;
+&lt;/svg&gt; &#13;</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="libs" class="section section-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1 class="text-uppercase text-light mb4">Dependencies &amp; Libraries</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <p class="mb0"><span class="text-medium">Bootstrap </span><span class="fz-12 text-thin">/ <a href="http://getbootstrap.com/">Official site</a></span></p>
+            <p><code class="fz-12">libs/bootstrap</code></p>
+            <p class="mb0"><span class="text-medium">jQuery </span><span class="fz-12 text-thin">/ <a href="http://jquery.com/">Official site</a></span></p>
+            <p> <code class="fz-12">libs/jquery</code></p>
+          </div>
+          <div class="col-md-9">
+            <h5>Adding your own styles</h5>
+            <p>If you need to override, add or change classes for your project please write them in the <code class="fz-12">custom.css</code> file provided and link it to your project. This will allow you to update to future versions without loosing your changes.</p>
+            <h5 class="mt3"> <span class="text-medium">Scss </span>project</h5>
+            <p>If you use SASS you can find the scss files used to create this template in the folder <code class="fz-12">/sass </code></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center text-light"><a href="#top" class="fz-30"><i class="pe-mi-up-arrow"></i></a></div>
+        </div>
+      </div>
+    </section>
+    <script>
+      var peLoader=function(){var e=function(e){config={loader:"#loading",removeTime:700};for(var o in e)e.hasOwnProperty(o)&&(config[o]=e[o]);var n,i=document.querySelector(config.loader),t=function(e){e.classList.add("loaded"),setTimeout(function(){document.body.removeChild(e)},config.removeTime)},r=function(){n=setTimeout(t(i),2e3)};i&&(window.addEventListener("load",r),i.addEventListener("click",function(){clearTimeout(n),t(i)}))};return{init:e}}();
+      peLoader.init({
+          loader: '#loading',
+          removeTime: 700
+      });
+      
+    </script>
+    <!-- Libs scripts-->
+    <script type="text/javascript" src="assets/libs/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="assets/libs/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/libs/prism/prism.js"></script>
+    <script type="text/javascript" src="assets/js/fontsmoothie.min.js"></script>
+    <!-- Pe Plugins-->
+    <script type="text/javascript" src="assets/js/pe-slider.2.js"></script>
+    <script type="text/javascript" src="assets/js/pe-scrollchange.min.js"></script>
+    <script type="text/javascript" src="assets/js/pe-navscroll.js"></script>
+    <script type="text/javascript" src="assets/js/pe-bg.js"></script>
+    <script type="text/javascript" src="assets/js/pe-svgttern.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script>
+      $(document).ready(function(){
+      
+        peNavScroll.init({
+          nav:'.navbar',
+          class:'active',
+          duration: 500,
+          noMenu: true,
+          allLinks: true,
+          hideOnScroll: true,
+          hideFn: function(){
+            document.querySelector('.navbar').classList.remove('navbar--open');
+            document.querySelector('.nav-btn').classList.remove('x');
+          },
+          showFn: function(){
+            document.querySelector('.navbar').classList.add('navbar--open');
+            document.querySelector('.nav-btn').classList.add('x');
+          },
+          easingFunction: easing.easeInOutCubic
+        });
+      
+        [].slice.call( document.querySelectorAll( '.form-group input, .input-group input' ) ).forEach( function( inputEl ) {
+          if( inputEl.value.trim() !== '' ) {
+            inputEl.parentNode.classList.add('block');
+          }
+      
+          inputEl.addEventListener( 'focus', onInputFocus );
+          inputEl.addEventListener( 'blur', onInputBlur );
+        });
+      
+        function onInputFocus( ev ) {
+          ev.target.parentNode.classList.add('block');
+        }
+      
+        function onInputBlur( ev ) {
+          if( ev.target.value.trim() === '' ) {
+            ev.target.parentNode.classList.remove('block');
+          }
+        }
+      
+        // Mobile Navigation
+        $('.nav-btn').click(function(){
+          $(this).toggleClass('x');
+          $('.navbar').toggleClass('navbar--open');
+        })
+        
+        // Select code
+        var pres = document.querySelectorAll('pre');
+        [].slice.call(pres).forEach(function(elem, index){
+          pres[index].addEventListener('click', function(){
+            SelectText(this)
+          })
+        })
+      
+      
+      
+      }) // Ready
+      
+      
+      
+      
+          
+    </script>
+  </body>
+</html>
