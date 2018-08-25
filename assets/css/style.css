@@ -1,10 +1,10 @@
 /*
-  
 
 
-   ____  ____  _  _  ____  ____  ____  _  _ 
+
+   ____  ____  _  _  ____  ____  ____  _  _
   (  _ \(_  _)( \/ )( ___)(  _ \( ___)( \( )
-  )___/ _)(_  )  (  )__)  )(_) ))__)  )  ( 
+  )___/ _)(_  )  (  )__)  )(_) ))__)  )  (
   (__)  (____)(_/\_)(____)(____/(____)(_)\_)
 
 
@@ -15,68 +15,61 @@
 
 */
 @font-face {
-  font-family: 'Gotham-Black';
-  src: url("../fonts/Gotham-Black_gdi.eot");
-  src: url("../fonts/Gotham-Black_gdi.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Black_gdi.woff") format("woff"), url("../fonts/Gotham-Black_gdi.ttf") format("truetype"), url("../fonts/Gotham-Black_gdi.otf") format("opentype"), url("../fonts/Gotham-Black_gdi.svg#Gotham-Black") format("svg");
-  font-weight: 450;
-  font-style: normal;
-  font-stretch: normal;
-  unicode-range: U+0020-2212;
+	font-family: 'Proxima Nova Bl';
+	src: url('../fonts/ProximaNova-Black.eot');
+	src: local('../fonts/Proxima Nova Black'), local('../fonts/ProximaNova-Black'),
+		url('../fonts/ProximaNova-Black.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova-Black.woff') format('woff'),
+		url('../fonts/ProximaNova-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
 }
+
 @font-face {
-  font-family: 'Gotham-Bold';
-  src: url("../fonts/Gotham-Bold_gdi.eot");
-  src: url("../fonts/Gotham-Bold_gdi.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Bold_gdi.woff") format("woff"), url("../fonts/Gotham-Bold_gdi.ttf") format("truetype"), url("../fonts/Gotham-Bold_gdi.otf") format("opentype"), url("../fonts/Gotham-Bold_gdi.svg#Gotham-Bold") format("svg");
-  font-weight: 400;
-  font-style: normal;
-  font-stretch: normal;
-  unicode-range: U+0020-2212;
+	font-family: 'Proxima Nova Rg';
+	src: url('../fonts/ProximaNova-Bold.eot');
+	src: local('../fonts/Proxima Nova Bold'), local('../fonts/ProximaNova-Bold'),
+		url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova-Bold.woff') format('woff'),
+		url('../fonts/ProximaNova-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
 }
+
 @font-face {
-  font-family: 'Gotham-Book';
-  src: url("../fonts/Gotham-Book_gdi.eot");
-  src: url("../fonts/Gotham-Book_gdi.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Book_gdi.woff") format("woff"), url("../fonts/Gotham-Book_gdi.ttf") format("truetype"), url("../fonts/Gotham-Book_gdi.otf") format("opentype"), url("../fonts/Gotham-Book_gdi.svg#Gotham-Book") format("svg");
-  font-weight: 325;
-  font-style: normal;
-  font-stretch: normal;
-  unicode-range: U+0020-2212;
+	font-family: 'Proxima Nova Rg';
+	src: url('../fonts/ProximaNova-Regular.eot');
+	src: local('../fonts/Proxima Nova Regular'), local('../fonts/ProximaNova-Regular'),
+		url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova-Regular.woff') format('woff'),
+		url('../fonts/ProximaNova-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
+
+
 @font-face {
-  font-family: 'Gotham-Light';
-  src: url("../fonts/Gotham-Light_gdi.eot");
-  src: url("../fonts/Gotham-Light_gdi.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Light_gdi.woff") format("woff"), url("../fonts/Gotham-Light_gdi.ttf") format("truetype"), url("../fonts/Gotham-Light_gdi.otf") format("opentype"), url("../fonts/Gotham-Light_gdi.svg#Gotham-Light") format("svg");
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  unicode-range: U+0020-2212;
+	font-family: 'Proxima Nova Th';
+	src: url('../fonts/ProximaNovaT-Thin.eot');
+	src: local('../fonts/Proxima Nova Thin'), local('../fonts/ProximaNovaT-Thin'),
+		url('../fonts/ProximaNovaT-Thin.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNovaT-Thin.woff') format('woff'),
+		url('../fonts/ProximaNovaT-Thin.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
 }
+
 @font-face {
-  font-family: 'Gotham-Medium';
-  src: url("../fonts/Gotham-Medium_gdi.eot");
-  src: url("../fonts/Gotham-Medium_gdi.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Medium_gdi.woff") format("woff"), url("../fonts/Gotham-Medium_gdi.ttf") format("truetype"), url("../fonts/Gotham-Medium_gdi.otf") format("opentype"), url("../fonts/Gotham-Medium_gdi.svg#Gotham-Medium") format("svg");
-  font-weight: 350;
-  font-style: normal;
-  font-stretch: normal;
-  unicode-range: U+0020-2212;
+	font-family: 'Proxima Nova Lt';
+	src: url('../fonts/ProximaNova-Semibold.eot');
+	src: local('../fonts/Proxima Nova Semibold'), local('../fonts/ProximaNova-Semibold'),
+		url('../fonts/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova-Semibold.woff') format('woff'),
+		url('../fonts/ProximaNova-Semibold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
 }
-@font-face {
-  font-family: 'Gotham-Thin';
-  src: url("../fonts/Gotham-Thin_gdi.eot");
-  src: url("../fonts/Gotham-Thin_gdi.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Thin_gdi.woff") format("woff"), url("../fonts/Gotham-Thin_gdi.ttf") format("truetype"), url("../fonts/Gotham-Thin_gdi.otf") format("opentype"), url("../fonts/Gotham-Thin_gdi.svg#Gotham-Thin") format("svg");
-  font-weight: 250;
-  font-style: normal;
-  font-stretch: normal;
-  unicode-range: U+0020-2212;
-}
-@font-face {
-  font-family: 'Gotham-Ultra';
-  src: url("../fonts/Gotham-Ultra_gdi.eot");
-  src: url("../fonts/Gotham-Ultra_gdi.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Ultra_gdi.woff") format("woff"), url("../fonts/Gotham-Ultra_gdi.ttf") format("truetype"), url("../fonts/Gotham-Ultra_gdi.otf") format("opentype"), url("../fonts/Gotham-Ultra_gdi.svg#Gotham-Ultra") format("svg");
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  unicode-range: U+0020-2212;
-}
+
 html {
   font-size: 1em;
   line-height: 1.5;
@@ -84,12 +77,12 @@ html {
 
 body {
   background-color: white;
-  font-family: "Gotham-Book";
+  font-family: "Proxima Nova Rg";
   font-size: 18px;
   line-height: 1.66;
 }
 
-/* 
+/*
 **
 **  Sections Stuff
 **
@@ -343,13 +336,13 @@ body {
   background-size: 70px;
 }
 
-/* 
+/*
 **
 **  Typo Stuff
 **
 */
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-  font-family: 'Gotham-Book';
+  font-family: 'Proxima Nova Bl';
 }
 
 h1, .h1 {
@@ -391,31 +384,20 @@ h5, .h5 {
 }
 
 .text-black {
-  font-family: 'Gotham-Black';
+  font-family: 'Proxima Nova Bl';
 }
 
 .text-bold {
-  font-family: 'Gotham-Bold';
+  font-family: 'Proxima Nova Lt';
 }
 
 .text-book {
-  font-family: 'Gotham-Book';
+  font-family: 'Proxima Nova Rg';
 }
 
-.text-light {
-  font-family: 'Gotham-Light';
-}
-
-.text-medium {
-  font-family: 'Gotham-Medium';
-}
 
 .text-thin {
-  font-family: 'Gotham-Thin';
-}
-
-.text-ultra {
-  font-family: 'Gotham-Ultra';
+  font-family: 'Proxima Nova Th';
 }
 
 .text-normalcase {
@@ -626,9 +608,9 @@ input:-moz-placeholder {
   z-index: 100;
 }
 
-/* 
+/*
 **
-**  Slider Specific Stuff 
+**  Slider Specific Stuff
 **
 */
 .slider_elem {
@@ -995,13 +977,13 @@ input[name='svg-src']:checked + label {
   stroke: #a0d7e3;
 }
 
-/* 
+/*
 **
-**  Buttons Stuff 
+**  Buttons Stuff
 **
 */
 .btn {
-  font-family: 'Gotham-Bold';
+  font-family: 'Proxima Nova Lt';
   font-size: 21px;
   text-transform: uppercase;
   background-color: transparent;
@@ -1013,16 +995,16 @@ input[name='svg-src']:checked + label {
   line-height: 1;
   color: #1e2124;
   /*
-    [class*="section-"] & { 
+    [class*="section-"] & {
       color: white;
       border-color: white;
-  
+
       &:hover, &:focus {
         background-color: white;
         border-color: white;
         color: $dark;
       }
-  
+
       &.inverse {
         background-color: white;
         &:hover, &:focus {
@@ -1033,7 +1015,7 @@ input[name='svg-src']:checked + label {
     }
     */
   /*
-    .section-dark & { 
+    .section-dark & {
       color: white;
       border-color: white;
       &:hover, &:focus {
@@ -1352,9 +1334,9 @@ input[name='svg-src']:checked + label {
   border-color: #d9534f;
 }
 
-/* 
+/*
 **
-**  Nav Stuff 
+**  Nav Stuff
 **
 */
 .navbar {
@@ -1699,9 +1681,9 @@ input[name='svg-src']:checked + label {
   }
 }
 
-/* 
+/*
 **
-**  Spacing Helpers Stuff 
+**  Spacing Helpers Stuff
 **
 */
 .m0 {
@@ -2906,9 +2888,9 @@ input[name='svg-src']:checked + label {
   margin: 0 auto;
 }
 
-/* 
+/*
 **
-**  Mobile Nav Button 
+**  Mobile Nav Button
 **
 */
 .nav-btn {
@@ -2987,9 +2969,9 @@ input[name='svg-src']:checked + label {
           transform: rotate3d(0, 0, 1, -45deg);
 }
 
-/* 
+/*
 **
-**  Loading Stuff 
+**  Loading Stuff
 **
 */
 #loading {
