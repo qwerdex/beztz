@@ -255,9 +255,10 @@ input:-moz-placeholder { text-overflow: ellipsis; }
   height: 525px;
   background-color: #2e3037;
   text-align: center;
-  background-image: url(assets/img/beztz_out_big_web.jpg);
-  background-size: 100%;
-  background-origin: content
+  //background-image: url(assets/img/beztz_out_big_web.jpg);
+//  background-size: 100%;
+//  background-origin: content;
+//  content: url(../img/quote.svg);
 }
 
 .svg-crown {
