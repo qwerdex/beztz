@@ -242,23 +242,14 @@ input:-moz-placeholder { text-overflow: ellipsis; }
 
 
 
-
-
-
-
-
-
-
 .svg-foreign-ipad {
-  width: 100%;
-  // height: 100%;
-  height: 525px;
-  background-color: #2e3037;
-  text-align: center;
-  //background-image: url(assets/img/beztz_out_big_web.jpg);
-//  background-size: 100%;
-//  background-origin: content;
-//  content: url(../img/quote.svg);
+width: 100%;
+height: 525px;
+background-color: #2e3037;
+text-align: center;
+background-image: url("https://beztz.net/assets/img/beztz_out_big_web.jpg");
+/* background-position: right 20px bottom 10%; */
+background-size: 100%;
 }
 
 .svg-crown {
