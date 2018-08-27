@@ -269,19 +269,20 @@
               </svg>
             </div>
             <h3 class="mb-50">Получите список инструментов из книги бесплатно</h3>
-            <form>
-              <div class="form-inline mb-15">
-                <div class="form-group">
-                  <input id="inputName" type="text" class="form-control">
-                  <label for="inputName">Имя</label>
-                </div>
-                <div class="form-group">
-                  <input id="inputEmail" type="text" class="form-control">
-                  <label for="inputEmail">Email</label>
-                </div>
-              </div>
-              <button type="submit" class="btn btn-white"> <i class="pe-mi-notepad-2 mr2"></i> Получить</button>
-            </form>
+            <!-- MailerLite Universal -->
+  <script>
+  (function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
+  var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
+  f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
+  var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
+  _.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+
+  var ml_account = ml('accounts', '1252240', 'v0z3h0z7q6', 'load');
+  </script>
+  <!-- End MailerLite Universal -->
+
+              <button type="submit" class="btn btn-white"> <i class="pe-mi-notepad-2 mr2" onclick="ml_account('webforms', '1020434', 'f6v3g3', 'show')"></i> Получить</button>
+
           </div>
         </div>
       </div>
