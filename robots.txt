@@ -1,0 +1,3 @@
+User-Fagent: *
+Disallow:
+Host: http://book.beztz.net/
